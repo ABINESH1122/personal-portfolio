@@ -1,0 +1,28 @@
+.banner{
+    background-image: url(pics/ba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+
+}
+/* .ani{
+    transition:transform 0.5s;
+}
+.ani:hover{
+    transform: scale(0.9);
+} */
+.ani {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+  }
+  
+  .row.g-3:hover .ani {
+    filter: blur(1.5px); /* Blur all cards when the row is hovered */
+    cursor: pointer;
+  }
+  
+  .row.g-3 .ani:hover {
+    filter: blur(0); /* Remove the blur on the hovered card */
+    transform: scale(1.05); /* Slightly scale up the hovered card for a zoom effect */
+    z-index: 1; /* Bring the hovered card to the front */
+  }
+  
